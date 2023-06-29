@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Take a note!</h1>
+    </div>
+
+    <div class="take-a-note-container">
+        <div class="take-a-note">
+            <textarea id="note_bar" cols="30" rows="10"></textarea>
+            <span></span>
+            <br>
+            <button onclick="addNote()">CLICK ME</button>
+        </div>
+    </div>
+
+    <div class="container-father">
+        <div class="container-child">
+            <div class="note">
+                <i class="fa-solid fa-paperclip"></i>
+                <p>Have a greatful day!
+                    🙏
+                </p>
+                <span></span><br><br>
+                <i onclick="delButton()" id="delete" class="fa-solid fa-square-xmark"></i>
+            </div>
+            <div class="note">
+                <i onclick="delButton()" class="fa-solid fa-paperclip"></i>
+                <p>Be careful with the sun!
+                    🌞
+                </p>
+                <span></span><br><br>
+                <i id="delete" class="fa-solid fa-square-xmark"></i>
+            </div>
+            <div class="note">
+                <i onclick="delButton()" class="fa-solid fa-paperclip"></i>
+                <p>Don't forget to drink alot!
+                    💧
+                </p>
+                <span></span><br><br>
+                <i id="delete" class="fa-solid fa-square-xmark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
